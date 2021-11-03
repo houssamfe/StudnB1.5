@@ -12,8 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudnB15">
         <activity
+            android:name=".profil"
+            android:exported="false" />
+        <activity
+            android:name=".Ajout"
+            android:exported="false" />
+        <activity
             android:name=".SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +34,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"/>
+            android:exported="true" />
     </application>
 
 </manifest>
