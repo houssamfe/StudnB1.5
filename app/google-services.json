@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "347633697712",
+    "project_id": "studnb-a3628",
+    "storage_bucket": "studnb-a3628.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347633697712:android:fa7099572131d98e494c75",
+        "android_client_info": {
+          "package_name": "com.example.studnb15"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347633697712-lgfnvi0ed769m48gionud5v7ccufvqua.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApdgRuhITedTlG6_YfxEmLIZEM_geuZGM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347633697712-lgfnvi0ed769m48gionud5v7ccufvqua.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
