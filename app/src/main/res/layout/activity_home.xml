@@ -59,7 +59,7 @@
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:layout_weight="90"
-                                        android:text="Studio 01"
+                                        android:text="Studio 16m²"
                                         android:textColor="#000000"
                                         android:textSize="18sp"
                                         android:textStyle="bold" />
@@ -88,6 +88,7 @@
 
 
                                 <ImageView
+                                    android:id="@+id/ivstud"
                                     android:layout_width="match_parent"
                                     android:layout_height="160dp"
                                     android:layout_marginBottom="8dp"
@@ -103,7 +104,7 @@
                                         android:id="@+id/textView"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="380 euro"
+                                        android:text="380 €"
                                         android:textColor="#3f9dff"
                                         android:textSize="24sp"
                                         android:textStyle="bold" />
@@ -129,6 +130,119 @@
 
 
                     </LinearLayout>
+
+
+
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="4dp"
+                            app:cardElevation="4dp"
+                            app:cardUseCompatPadding="true"
+                            app:contentPadding="16dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="90"
+                                        android:text="Appartement T2"
+                                        android:textColor="#000000"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="10"
+                                        android:drawableLeft="@drawable/ic_baseline_star_24"
+                                        android:padding="6dp"
+                                        android:text="4.9"
+                                        android:textAlignment="textEnd"
+                                        android:textColor="#ffc32d"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="8dp"
+                                    android:text="12 rue Dalida "
+                                    android:textColor="#a4a7b5"
+                                    android:textSize="14sp" />
+
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="160dp"
+                                    android:layout_marginBottom="8dp"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/t2" />
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="100">
+
+                                    <TextView
+                                        android:id="@+id/textView2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="430 €"
+                                        android:textColor="#3f9dff"
+                                        android:textSize="24sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignEnd="@+id/textView2"
+                                        android:layout_alignRight="@id/textView2"
+                                        android:layout_marginEnd="-48dp"
+                                        android:layout_marginRight="-48dp"
+                                        android:text="/cc     "
+                                        android:textColor="#8ac3ff"
+                                        android:textSize="14sp" />
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+
                 </HorizontalScrollView>
 
 
@@ -199,7 +313,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="134dp"
                                 android:scaleType="fitXY"
-                                android:src="@drawable/studio" />
+                                android:src="@drawable/t2" />
 
 
                             <LinearLayout
@@ -213,7 +327,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentRight="true"
                                     android:padding="8dp"
-                                    android:text="$380/cc"
+                                    android:text="430 €/cc"
                                     android:textAlignment="textEnd"
                                     android:textColor="#3f9dff"
                                     android:textSize="18sp"
@@ -223,7 +337,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="4dp"
-                                    android:text="Studio"
+                                    android:text="Appartement T2"
                                     android:textColor="#000000"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
@@ -231,7 +345,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="01 rue ville"
+                                    android:text="12 rue Dalida"
                                     android:textColor="#a4a7b5"
                                     android:textSize="12sp" />
 
@@ -276,7 +390,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_alignParentRight="true"
                                     android:padding="8dp"
-                                    android:text="$380/cc"
+                                    android:text="380 €/cc"
                                     android:textAlignment="textEnd"
                                     android:textColor="#3f9dff"
                                     android:textSize="18sp"
@@ -286,7 +400,7 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_marginBottom="4dp"
-                                    android:text="Studio"
+                                    android:text="Studio 16m²"
                                     android:textColor="#000000"
                                     android:textSize="14sp"
                                     android:textStyle="bold" />
@@ -294,7 +408,7 @@
                                 <TextView
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:text="01 rue ville"
+                                    android:text="01 rue du pont"
                                     android:textColor="#a4a7b5"
                                     android:textSize="12sp" />
 
@@ -308,79 +422,7 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:paddingLeft="8dp"
-                    android:paddingRight="8dp"
-                    android:paddingBottom="8dp"
-                    android:weightSum="100">
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="50"
-                        app:cardCornerRadius="4dp"
-                        app:cardElevation="4dp"
-                        app:cardUseCompatPadding="true">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical">
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="134dp"
-                                android:scaleType="fitXY"
-                                android:src="@drawable/studio" />
-
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="8dp"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_alignParentRight="true"
-                                    android:padding="8dp"
-                                    android:text="$380/cc"
-                                    android:textAlignment="textEnd"
-                                    android:textColor="#3f9dff"
-                                    android:textSize="18sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginBottom="4dp"
-                                    android:text="Studio"
-                                    android:textColor="#000000"
-                                    android:textSize="14sp"
-                                    android:textStyle="bold" />
-
-                                <TextView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:text="01 rue ville"
-                                    android:textColor="#a4a7b5"
-                                    android:textSize="12sp" />
-
-
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-
-                    </androidx.cardview.widget.CardView>
-
-
-                </LinearLayout>
 
 
             </LinearLayout>
@@ -397,10 +439,6 @@
         app:itemBackground="@color/purple_200"
         app:menu="@menu/bottom_navigation" />
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextHOME" />
+
 
 </RelativeLayout>

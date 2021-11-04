@@ -17,9 +17,194 @@
         />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/title_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextAJOUT" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:text="@string/ajouter_une_annonce"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:translationY="20dp" />
+
+    <TextView
+        android:id="@+id/view_adresse"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="109dp"
+        android:text="@string/adresse"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/adresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="97dp"
+        android:layout_toEndOf="@id/view_adresse"
+        android:autofillHints="3"
+        android:hint="@string/Saisir_votre_adresse"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575" />
+
+    <TextView
+        android:id="@+id/view_date_debut"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="162dp"
+        android:text="@string/date_d_but"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@id/pick_time_debut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="150dp"
+        android:layout_toEndOf="@id/view_date_debut"
+        android:onClick="showDatePickerDialog"
+        android:text="@string/selectionner_date_de_debut"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/view_date_fin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_date_debut"
+        android:layout_marginTop="40dp"
+        android:text="@string/date_fin"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@id/pick_time_fin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="210dp"
+        android:layout_toEndOf="@id/view_date_debut"
+        android:onClick="showDatePickerDialog"
+        android:text="@string/selectinnez_date_de_fin"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/view_nb_personne"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_date_fin"
+        android:layout_marginTop="20dp"
+        android:text="@string/nombre_de_personnes"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/nb_personne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="271dp"
+        android:layout_toEndOf="@id/view_nb_personne"
+        android:autofillHints="2"
+        android:hint="@string/_2"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/view_animaux"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_nb_personne"
+        android:layout_marginTop="20dp"
+        android:text="@string/animaux"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/animaux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="323dp"
+        android:layout_toEndOf="@id/view_animaux"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck,UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/view_fumeur"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_animaux"
+        android:layout_marginTop="28dp"
+        android:text="@string/fumeur"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/fumeur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="375dp"
+        android:layout_toEndOf="@id/view_fumeur"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/view_prix"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view_fumeur"
+        android:layout_marginTop="35dp"
+        android:text="@string/prix"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/prix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="432dp"
+        android:layout_toEndOf="@id/view_fumeur"
+        android:autofillHints="1"
+        android:hint="@string/_24"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/valider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/prix"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="153dp"
+        android:text="Valider" />
+
 
 </RelativeLayout>

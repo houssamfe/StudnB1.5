@@ -1,43 +1,26 @@
 package com.example.studnb15;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
-import android.os.Bundle;
-
-
 import android.content.Intent;
-import android.view.View;
-import android.widget.Button;
+import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.auth.FirebaseAuth;
 
-public class HomeActivity extends AppCompatActivity {
-
+public class AnnonceActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
-
-        ImageView imageView = findViewById(R.id.ivstud);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(HomeActivity.this,AnnonceActivity.class));
-                                     }}
-        );
-
-
+        setContentView(R.layout.activity_annonce);
 
         //initialisation de la bottom navigation
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        //selectionne le bouton home
-        bottomNavigationView.setSelectedItemId(R.id.nav_home);
+        //selectionne le bouton d'ajout
+        bottomNavigationView.setSelectedItemId(R.id.nav_add);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -65,4 +48,6 @@ public class HomeActivity extends AppCompatActivity {
         });
 
     }
+
+
 }

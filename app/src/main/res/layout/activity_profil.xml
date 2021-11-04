@@ -11,10 +11,10 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/logout"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="119dp"
-        android:layout_marginBottom="488dp"
         android:text="Welcome! You are logged in" />
 
     <Button
@@ -24,8 +24,8 @@
 
         android:layout_above="@+id/bottom_navigation"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="157dp"
-        android:layout_marginBottom="66dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="74dp"
         android:text="Logout" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -33,15 +33,224 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="-1dp"
+        android:layout_marginBottom="0dp"
         android:background="?android:attr/windowBackground"
         app:itemBackground="@color/purple_200"
         app:menu="@menu/bottom_navigation" />
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="144dp"
+        android:layout_height="159dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="36dp"
+        android:src="@drawable/lora"
+        app:layout_constraintBottom_toTopOf="@+id/prenom"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/prenom"
+        android:layout_width="151dp"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="228dp"
+        android:text="Laura"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="157dp"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="242dp"
+        android:layout_marginEnd="222dp"
+        android:text="Dupont"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prenom" />
+
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="151dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="251dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginBottom="24dp"
+        android:text="laura.dupont@sfr.fr"
+        app:layout_constraintBottom_toTopOf="@+id/numero"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/age"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/numero"
+        android:layout_width="116dp"
+        android:layout_height="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="26dp"
+        android:text="06.08.90.56.47"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/etude"
+        android:layout_width="212dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="297dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="33dp"
+        android:text="Etudiante en M1 physique"
+        app:layout_constraintBottom_toTopOf="@+id/etude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nom"
+        app:layout_constraintVertical_bias="0.386"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/descriptifP"
+        android:layout_width="297dp"
+        android:layout_height="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="365dp"
+        android:layout_marginEnd="61dp"
+        android:text="Aime les animaux et le rock Un peu maniaque, j'aime être organisée
+
+
+
+
+        Très sociable j'adore rencontrer des personnes "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etude"
+        tools:ignore="DuplicateIds" />
+
+
+    <TextView
+        android:id="@+id/age"
+        android:layout_width="60dp"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="126dp"
+        android:layout_marginEnd="85dp"
+        android:text="22 ans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="207dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/ic_baseline_cake_24"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toStartOf="@+id/age"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/ic_baseline_email_24"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toStartOf="@+id/email"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="41dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="155dp"
+        android:src="@drawable/ic_baseline_local_phone_24"
+        app:layout_constraintEnd_toStartOf="@+id/numero"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <TextView
+        android:id="@+id/descriptif"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextPROFIL" />
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="336dp"
+        android:layout_marginEnd="314dp"
+        android:layout_marginBottom="320dp"
+        android:text="Descriptif"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@+id/descriptifP"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etude"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/etudeTitre"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="313dp"
+        android:text="Etude"
+        android:textStyle="italic"
+        tools:ignore="MissingConstraints" />
+
 
 </RelativeLayout>

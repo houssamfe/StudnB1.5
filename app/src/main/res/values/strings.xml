@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">StudnB1.5</string>
+    <string name="date_d_but">Date début</string>
+    <string name="ajouter_une_annonce">Ajouter une annonce</string>
+    <string name="selectinnez_date_de_d_but">Selectinnez date de début</string>
+    <string name="selectinnez_date_de_fin">Selectinnez date de fin</string>
+    <string name="adresse">Adresse</string>
+    <string name="prix">Prix</string>
+    <string name="_24">24</string>
+    <string name="date_fin">Date fin</string>
+    <string name="nombre_de_personnes">Nombre de personnes</string>
+    <string name="_2">2</string>
+    <string name="animaux">Animaux</string>
+    <string name="fumeur">Fumeur</string>
+    <string name="selectionner_date_de_debut">selectionner date de debut</string>
+    <string name="Saisir_votre_adresse">Saisir votre adresse</string>
 </resources>
